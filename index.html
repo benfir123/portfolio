@@ -46,11 +46,82 @@
               I'm a professional Full Stack Web Developer based out of Bangkok,
               Thailand.
             </p>
-            <a href="#work" class="button large scrolly"
-              >Learn about what I do</a
+            <a href="#portfolio" class="button large scrolly"
+              >See what I've worked on</a
             >
           </div>
         </div>
+      </div>
+    </article>
+
+    <!-- Portfolio -->
+    <article id="portfolio" class="wrapper style3">
+      <div class="container">
+        <header>
+          <h2>Here’s some stuff I made recently.</h2>
+          <p>Don't hesitate to let me know what you think.</p>
+        </header>
+        <div class="row" style="justify-content: center">
+          <div class="col-4 col-6-medium col-12-small">
+            <article class="box style2">
+              <a href="https://snapsurvey.app/" class="image featured"
+                ><img src="images/snapsurvey.png" alt=""
+              /></a>
+              <h3><a href="https://snapsurvey.app/">Snapsurvey</a></h3>
+              <p>
+                Snapsurvey is a market research survey tool. It allows you to
+                gather opinions of customers before launching a new product.
+              </p>
+              <a href="https://snapsurvey.app/" class="featured">View website</a>
+            </article>
+          </div>
+          <div class="col-4 col-6-medium col-12-small">
+            <article class="box style2">
+              <a
+                href="https://www.demopond.com/"
+                class="image featured"
+                ><img src="images/demopond.png" alt=""
+              /></a>
+              <h3>
+                <a href="https://www.demopond.com/"
+                  >Demopond</a
+                >
+              </h3>
+              <p>
+                Demopond lets startups record free interactive demos of their software products to get their clients to that "Aha!" moment faster.
+              </p>
+              <a
+                href="https://www.demopond.com/"
+                class="featured"
+                >View website</a
+              >
+            </article>
+          </div>
+          <div class="col-4 col-6-medium col-12-small">
+            <article class="box style2">
+              <a href="https://spontaneous-medovik-887bd3.netlify.app/" class="image featured"
+                ><img src="images/RLD-homepage.png" alt=""
+              /></a>
+              <h3>
+                <a href="https://spontaneous-medovik-887bd3.netlify.app/">RLD Restore</a>
+              </h3>
+              <p>
+                RLD is a local automotive restoration service located in the
+                Rama 2 area. Customers can schedule appointments through their
+                website.
+              </p>
+              <a href="https://spontaneous-medovik-887bd3.netlify.app/" class="featured"
+                >View website</a
+              >
+            </article>
+          </div>
+        </div>
+        <footer>
+          <p>Need help with building something?</p>
+          <a href="#work" class="button large scrolly"
+            >Learn about what I do</a
+          >
+        </footer>
       </div>
     </article>
 
@@ -141,77 +212,6 @@
             I am also proficient with Test Driven Development (TDD) and the
             Agile methodology.
           </p>
-          <a href="#portfolio" class="button large scrolly"
-            >See some of my recent work</a
-          >
-        </footer>
-      </div>
-    </article>
-
-    <!-- Portfolio -->
-    <article id="portfolio" class="wrapper style3">
-      <div class="container">
-        <header>
-          <h2>Here’s some stuff I made recently.</h2>
-          <p>Don't hesitate to let me know what you think.</p>
-        </header>
-        <div class="row" style="justify-content: center">
-          <div class="col-4 col-6-medium col-12-small">
-            <article class="box style2">
-              <a href="https://snapsurvey.app/" class="image featured"
-                ><img src="images/snapsurvey.png" alt=""
-              /></a>
-              <h3><a href="https://snapsurvey.app/">Snapsurvey</a></h3>
-              <p>
-                Snapsurvey is a market research survey tool. It allows you to
-                gather opinions of customers before launching a new product.
-              </p>
-              <a href="https://snapsurvey.app/" class="featured">View website</a>
-            </article>
-          </div>
-          <div class="col-4 col-6-medium col-12-small">
-            <article class="box style2">
-              <a
-                href="https://www.demopond.com/"
-                class="image featured"
-                ><img src="images/demopond.png" alt=""
-              /></a>
-              <h3>
-                <a href="https://www.demopond.com/"
-                  >Demopond</a
-                >
-              </h3>
-              <p>
-                Demopond lets startups record free interactive demos of their software products to get their clients to that "Aha!" moment faster.
-              </p>
-              <a
-                href="https://www.demopond.com/"
-                class="featured"
-                >View website</a
-              >
-            </article>
-          </div>
-          <div class="col-4 col-6-medium col-12-small">
-            <article class="box style2">
-              <a href="https://spontaneous-medovik-887bd3.netlify.app/" class="image featured"
-                ><img src="images/RLD-homepage.png" alt=""
-              /></a>
-              <h3>
-                <a href="https://spontaneous-medovik-887bd3.netlify.app/">RLD Restore</a>
-              </h3>
-              <p>
-                RLD is a local automotive restoration service located in the
-                Rama 2 area. Customers can schedule appointments through their
-                website.
-              </p>
-              <a href="https://spontaneous-medovik-887bd3.netlify.app/" class="featured"
-                >View website</a
-              >
-            </article>
-          </div>
-        </div>
-        <footer>
-          <p>Need help with building something?</p>
           <a href="#contact" class="button large scrolly"
             >Get in touch with me</a
           >
@@ -270,7 +270,11 @@
         </div>
         <footer>
           <ul id="copyright">
-            <li>&copy; 2024 Ben Chanapai</li>
+            <li>&copy;
+              <span id="copyright-content">
+                <script>document.getElementById('copyright-content').appendChild(document.createTextNode(new Date().getFullYear() + ' Ben Chanapai'))</script>
+              </span>
+            </li>
           </ul>
         </footer>
       </div>
